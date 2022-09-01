@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Tapestry&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">    
+    <style>
+      body {
+        background: radial-gradient(
+          circle at 46% 36%,
+          rgb(0, 0, 0) 45%,
+          rgb(235, 41, 7) 90.2%
+        );
+      }
+      h1 {
+        text-align: center;
+        color: rgb(255, 242, 57);
+        font-family: 'Tapestry', cursive;
+        font-size: 45px;
+      }
+
+      h2 {
+        text-align: center;
+        border: 1px solid #f6f79b;
+        padding: 15px;
+        font-size: 22px;
+        border-radius: 5px;
+        color: rgb(253, 249, 199);
+        font-family: 'Bad Script', cursive;
+        transition: all 200ms ease-in-out;
+      }
+      h2:hover {
+        background: #f6f79b;
+        color: rgb(0, 0, 0);
+        border: 2px solid #ffffff;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+        transition: all 200ms ease-in-out;
+      }
+      img:hover {
+        box-shadow: 5px 5px 10px rgba(255, 238, 0, 0.377);
+        cursor: pointer;
+      }
+      .book-cov{
+          background-image: url("../img/book.jpg");
+          transition: all 200ms ease-in-out;
+      }
+      .book-cov:hover{
+        background-image: url("../img/il.jpg");
+      }
+      p {
+        line-height: 1.5;
+        font-size: 20px;
+        margin: 20px 0 10px;
+        color: rgb(253, 249, 199);
+        text-align: center;
+        background: rgb(0, 0, 0);
+        border: 0.5px solid rgb(253, 249, 199);
+        border-radius: 5px;
+        font-family: "Bradley Hand, cursive";
+        padding: 10px;
+      }
+
+      button {
+        display: block;
+        margin: 20px auto;
+        background: rgb(172, 170, 99);
+        color: white;
+        font-size: 18px;
+        padding: 15px 20px;
+        border: 2px solid rgb(172, 170, 99);
+        border-radius: 7px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0);
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+        border: 2px solid #eeff00;
+        box-shadow: 5px 5px 10px rgba(255, 238, 0, 0.377);
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 15px 60px;
+        background: rgba(0, 0, 0, 0.377);
+        text-align: center;
+        border-radius: 7px;
+      }
+
+      .learn-more {
+        color: rgb(217, 219, 72);
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 1.5;
+        transition: all 200ms ease-in-out;
+      }
+
+      .learn-more:hover {
+        text-decoration: underline 2px dashed #00f7ff;
+        color:#f6f79b;
+      }
+
+      .footer {
+        text-align: center;
+        border: none;
+        background: rgba(0, 0, 0, 0.719);
+      }
+      a {
+        color: rgb(217, 219, 72);
+      }
+      hr {
+        border: none;
+        border-top: 3px double rgb(255, 38, 0);
+        color: rgb(255, 217, 0);
+        overflow: visible;
+        text-align: center;
+        height: 5px;
+        max-width: 100%;
+      }
+
+      hr:after {
+        content: '§';
+        padding: 0 4px;
+        position: relative;
+        top: -13px;
+      }
+      .quote{
+          font-size: 17px;
+          color:rgb(106, 146, 165);
+          margin-left: 350px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>I love Books📚</h1>
+      <h2>“There are worse crimes than burning books. For example - do not read them.” <br>
+            <a class="quote">Ray Douglas Bradbury</a>
+      </h2>
+          <img class="book-cov"
+            src="../img/book.jpg"
+            alt="Book"
+          />
+          <a
+            href="https://www.capgeox.org/uploads/1/3/1/9/131934518/the_martian_chronicles_-_ray_bradbury.pdf"
+            target="_blank"
+            class="learn-more text-center"
+          >
+            Read now ⤴️
+          </a>
+      <div id="carouselExampleIndicators" class="carousel slide mt-5 mb-3" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/img/book-1.jpg" class="d-block w-100" alt="book-illustration">
+          </div>
+          <div class="carousel-item">
+            <img src="/img/book-2.jfif" class="d-block w-100" alt="book-illustration">
+            <div class="carousel-caption d-none d-md-block">
+              <p style="background: rgba(0, 0, 0, 0.432); border:none; font-weight: 400; padding: 0;">By 
+                <a style="text-decoration: none;" href="https://render.ru/ru/artist/48894/about">Graphmax</a></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/img/book-3.jpg" class="d-block w-100" alt="book-illustration">
+          </div>
+          <div class="carousel-item">
+            <img src="/img/book-4.jpg" class="d-block w-100" alt="book-illustration">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <p>
+        <em>The Martian Chronicles</em> is a science fiction fix-up novel, published in 1950,
+         by American writer Ray Bradbury that chronicles the exploration and settlement of Mars,
+         the home of indigenous Martians, 
+        by Americans leaving a troubled Earth that is eventually devastated by nuclear war.
+      </p>
+      <br>
+      <h2>Synopsis</h2>
+      <p>The book projects American society immediately after World War II into a technologically advanced 
+        future where the amplification of humanity's potentials to create and destroy have both miraculous and devastating consequences.
+        Events in the chronicle include the apocalyptic destruction of both Martian and human civilizations, 
+        both instigated by humans, though there are no stories with settings at the catastrophes. 
+        <br><br>The outcomes of many stories raise concerns about the values and direction of America of the time by addressing militarism, science, technology,
+         and war time prosperity that could result in a global nuclear war <em>(e.g., "There Will Come Soft Rains" and "The Million-Year Picnic");</em>
+          depopulation that might be considered genocide <em>(e.g., "The Third Expedition", "—And the Moon Be Still as Bright" and "The Musicians");</em> 
+          racial oppression and exploitation <em>(e.g., "Way in the Middle of the Air");</em> ahistoricism, philistinism, and hostility towards religion 
+          <em>(e.g., "—And the Moon Be Still as Bright");</em> and censorship and conformity <em>(e.g., "Usher II")</em>, among others. 
+          On Bradbury's award of a Pulitzer Prize Special Citation in 2007, 
+        the book was recognized as one of his "masterworks that readers carry with them over a lifetime."</p>
+      <br /></br> <hr> <br /></br>
+      <img class="book-cov mt-3"
+            src="../img/book(2).jpg"
+            alt="Book"
+            />
+            <a
+            href="https://www.ccsoh.us/site/handlers/filedownload.ashx?moduleinstanceid=16792&dataid=23409&FileName=Fahrenheit%20451.pdf"
+            target="_blank"
+            class="learn-more text-center"
+          >
+            Read now ⤴️
+          </a>
+          <br><br>
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/img/book-21.jpg" class="d-block w-100" alt="book-illustration">
+              </div>
+              <div class="carousel-item">
+                <img src="/img/book-22.jpg" class="d-block w-100" alt="book-illustration">
+              </div>
+              <div class="carousel-item">
+                <img src="/img/book-23.jpg" class="d-block w-100" alt="book-illustration">
+                <div class="carousel-caption d-none d-md-block">
+                  <p style="background: rgba(0, 0, 0, 0.432); border:none; padding: 0;">By 
+                    <a style="text-decoration: none; font-weight: 400;" href="https://www.artstation.com/konir">Pontus König</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+              <img src="/img/book-24.jpg" class="d-block w-100" alt="film-1966">
+              <div class="carousel-caption d-none d-md-block">
+                <p style="background: rgba(0, 0, 0, 0.720); border:none; padding: 0;">1966 British dystopian drama film directed by François Truffaut</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="/img/book-25.jpg" class="d-block w-100" alt="film-1966">
+              <div class="carousel-caption d-none d-md-block">
+                <p style="background: rgba(0, 0, 0, 0.720); border:none; padding: 0;">1966 British dystopian drama film directed by François Truffaut</p>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      <p>
+        <em>Fahrenheit 451</em> is a 1953 dystopian novel by American writer Ray Bradbury. 
+        Often regarded as one of his best works, the novel presents a future American society where books are outlawed and "firemen" burn any that are found.
+         The book's tagline explains the title as "the temperature at which book paper catches fire, and burns": the autoignition temperature of paper. The lead character,
+          Guy Montag, is a fireman who becomes disillusioned with his role of censoring literature and destroying knowledge,
+         eventually quitting his job and committing himself to the preservation of literary and cultural writings.
+      </p>
+      <p>
+        Fahrenheit 451 is set in an unspecified city in the year 2049 (according to Ray Bradbury's Coda), though it is written as if set in a distant future. 
+        <br>The earliest editions make clear that it takes place no earlier than the year 1960.
+The novel is divided into three parts: <em>"The Hearth and the Salamander," "The Sieve and the Sand,"</em> and <em>"Burning Bright."</em>
+      </p>
+      <hr>
+      <a
+        href="https://en.wikipedia.org/wiki/Fahrenheit_451#Plot_summary"
+        target="_blank"
+        class="learn-more"
+      >
+        Learn more on Wikipedia ⤴️
+      </a><hr>
+      <button onclick="window.location.href = '/Books.html';" class="switch-button">👉 Switch to games🎮</button>
+      <br>
+      <p class="footer">
+        This page was built by
+        <a href="https://github.com/Ksen-N/My-first-project-game-book-" class="learn-more" target="_blank"> Kseniia Noskova </a>
+      </p>
+    </div>
+    <script>
+      function switchbut() {
+        let name = prompt("What is your name?");
+        let book = prompt("What is your favorite book?");
+        if(name.length === 0){
+            alert("No name — no games!");
+       } else {
+            window.location.href = "/Game.html";
+            alert("It's a good choice, " +
+                    name +
+          "! We'll be in touch, meanwhile visit Kingdom of Games🎮");
+        }
+       
+      }
+
+      let switchButton = document.querySelector(".switch-button");
+      switchButton.addEventListener("click", switchbut);
+    </script>
+  </body>
+</html>
